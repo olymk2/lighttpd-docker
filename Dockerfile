@@ -16,6 +16,8 @@ COPY start.sh /usr/local/bin/
 
 EXPOSE 80
 
+ENV DOCUMENT_ROOT /var/www/localhost/htdocs
+ENV DOCUMENT_CGI_ROOT /var/www/localhost/cgi-bin/
 VOLUME /var/www/localhost
 VOLUME /etc/lighttpd
 
